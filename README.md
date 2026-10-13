@@ -90,4 +90,18 @@ Result:
 
 Validation: Successfully retrieved all 263 Active Directory user accounts. The enabled and disabled counts add up to the total numbers of users.
 
-Reflection: Enabled tells us whether an account is allowed to sign in, but it foes not confirm that the user is currently signed in or that a sign in attempt will succeed. 
+Reflection: Enabled tells us whether an account is allowed to sign in, but it foes not confirm that the user is currently signed in or that a sign in attempt will succeed.
+
+## Challenge 08 - Test Lab Network Responses
+
+Run Location: LON-CL1
+
+Results:
+- LON-CL1,Adatum: ICMP reply
+- LON-DC1.Adatum.com: ICMP reply
+- LON-SVR1.Adatum.com: ICMP reply
+- Total ICMP replies: 3
+
+Validation: Successfully tested all three computers using Test-Connection. All three responded to ICMP requests.
+
+Reflection: An ICMP reply confirms network responsiveness but does not prove PowerShell remoting works. PowerShell remoting requires additional configuration and permissions.
