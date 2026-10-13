@@ -51,3 +51,16 @@ Result:
 Validation: Successfully counted all 256 services using a foreach loop. Verified the total matched (Get-Service).Count.
 
 Reflection: If the counter resets inside the loop, it starts back at zero each time, resulting in an incorrect total.
+
+## Challenge 05 - Read the Domain Computer Inventory
+
+Run Location: LON-CL1
+
+Result:
+- LON-CL1 | LON-CL1.Adatum.com | Windows 10 Enterprise
+- LON-DC1 | LON-DC1.Adatum.com | Windows Server 2019 Datacenter Evaluation
+- LON-SVR1 | LON-SVR1.Adatum.com | Windows Server 2019 Datacenter Evaluation
+
+Validation: Successfully retrieved all three computer records from Active Directory.
+
+Reflection: This is directory information stored in Active Directory, not a live operating system query. The information may not always reflect the computer's current state. 
