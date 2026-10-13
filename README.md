@@ -64,3 +64,17 @@ Result:
 Validation: Successfully retrieved all three computer records from Active Directory.
 
 Reflection: This is directory information stored in Active Directory, not a live operating system query. The information may not always reflect the computer's current state. 
+
+## Challenge 06 - Flag Local Services for Review
+
+Run Location: LON-CL1
+
+Result:
+- EventLog: OK
+- W32Time: OK
+- Spooler: OK
+- Total services for REVIEW: 0
+
+Validation: Successfully checked all three services using a foreach loop and if/else statements. All services were running, so none required review.
+
+Reflection: A stopped service is not always a problem because some services are designed to run only when needed or may be intentionally disabled.
