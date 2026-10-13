@@ -78,3 +78,16 @@ Result:
 Validation: Successfully checked all three services using a foreach loop and if/else statements. All services were running, so none required review.
 
 Reflection: A stopped service is not always a problem because some services are designed to run only when needed or may be intentionally disabled.
+
+## Challenge 07 - Summarize Domain User Account States
+
+Run Location: Lon-CL1
+
+Result: 
+- Enabled users: 251
+- Disabled users: 12
+- Total users: 263
+
+Validation: Successfully retrieved all 263 Active Directory user accounts. The enabled and disabled counts add up to the total numbers of users.
+
+Reflection: Enabled tells us whether an account is allowed to sign in, but it foes not confirm that the user is currently signed in or that a sign in attempt will succeed. 
