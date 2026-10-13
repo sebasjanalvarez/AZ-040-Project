@@ -39,3 +39,15 @@ Result:
 Validation: Successfully displayed all three services and their current statuses.
 
 Reflection: Service statuses can differ between students because their computers may have different configurations, settings, or running processes.
+
+## Challenge 04 - Count Local Services
+
+Run Location: LON-CL1
+
+Result:
+- Displayed all local service names
+- Total services: 256
+
+Validation: Successfully counted all 256 services using a foreach loop. Verified the total matched (Get-Service).Count.
+
+Reflection: If the counter resets inside the loop, it starts back at zero each time, resulting in an incorrect total.
