@@ -120,3 +120,16 @@ Results:
 Validation: Successfully eported and imported three computer records with four columns.
 
 Reflection: Exporting objects instead of formatted strings preserves structured data, making it easier to filter, sort, and analyze.
+
+## Challenge 10 - Review Services on the Member Server
+
+Run Location: LON-CL1
+
+Results:
+- LON-SVR1.Adatum.com | EventLog | Running | OK
+- LON-SVR1.Adatum.com | Spooler | Running | OK
+- LON-SVR1.Adatum.com | W32Time | Running | OK
+
+Validation: Successfully retrieved all three servicesremotely from LON-SVR1 using Invoke-Command.
+
+Reflection: Invoke-Command runs the service query on LON-SVR1, while the foreach loops and status checks run on LON-CL1.
