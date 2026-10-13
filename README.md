@@ -105,3 +105,18 @@ Results:
 Validation: Successfully tested all three computers using Test-Connection. All three responded to ICMP requests.
 
 Reflection: An ICMP reply confirms network responsiveness but does not prove PowerShell remoting works. PowerShell remoting requires additional configuration and permissions.
+
+## Challenge 09 - Export a Computer Account Report
+
+Run Location: LON-CL1
+
+Results:
+- LON-CL1 | Windows 10 Enterprise | Enabled
+- LON-DC1 | Windows Server 2019 Datacenter Evaluation | Enabled
+- LON-SVR1 | Windows Server 2019 Datacenter Evaluation | Enabled
+- Total records: 3
+- CSV exported successfully
+
+Validation: Successfully eported and imported three computer records with four columns.
+
+Reflection: Exporting objects instead of formatted strings preserves structured data, making it easier to filter, sort, and analyze.

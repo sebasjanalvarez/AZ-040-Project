@@ -1,0 +1,4 @@
+﻿"ComputerName","DNSHostName","OperatingSystem","AccountState"
+"LON-CL1","LON-CL1.Adatum.com","Windows 10 Enterprise","Enabled"
+"LON-DC1","LON-DC1.Adatum.com","Windows Server 2019 Datacenter Evaluation","Enabled"
+"LON-SVR1","LON-SVR1.Adatum.com","Windows Server 2019 Datacenter Evaluation","Enabled"
