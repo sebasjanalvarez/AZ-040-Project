@@ -133,32 +133,3 @@ Results:
 Validation: Successfully retrieved all three servicesremotely from LON-SVR1 using Invoke-Command.
 
 Reflection: Invoke-Command runs the service query on LON-SVR1, while the foreach loops and status checks run on LON-CL1.
-
-
-## Project - Disk Space Checker
-
-Project Overview:
-Created a PowerShell script to monitor local disk storage and identify drives with low available space.
-
-Features:
-- Retrieves local disk information using Get-CimInstance.
-- Displays total storage and free space in GB.
-- Calculates available disk space percentages.
-- Displays a red warning below 15% free space.
-- Displays a green message when spaace is sufficient.
-- Exports results into a CSV file.
-
-Tools Used:
-- Windows PowerShell
-- Visual Studio Code
-- WMI/CIM
-- GitHub
-
-Testing:
-Tested on LON;CL1 using the C: and E: drives. Temporarily changed the threshold to 90% to verify the warning system, then restored it to 15%.
-
-Validation:
-Successfully retrieved disk information, displayed the correct status messages, and exported a CSV report.
-
-Reflection:
-Learned how to use PowerShell variables, foreach loops, if/else conditions, calculated properties, and CSV exports.
